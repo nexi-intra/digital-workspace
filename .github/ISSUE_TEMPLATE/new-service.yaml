@@ -1,7 +1,6 @@
 # GitHub Issue Template for Service Registration
 
 name: "Service Registration Template"
-about: "Use this template for registering a new service or updating an existing service"
 title: "Service Registration: [Service Name]"
 labels: [service-registration, needs-review]
 assignees: 'username1, username2'
@@ -73,4 +72,4 @@ body:
     validations:
       required: true
 
-footer: 'Please review all details before submitting.'
+
