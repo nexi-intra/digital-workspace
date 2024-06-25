@@ -2,6 +2,7 @@
 
 name: "Service Registration Template"
 title: "Service Registration: [Service Name]"
+description: "Service Registration"
 labels: [service-registration, needs-review]
 assignees: 'username1, username2'
 
