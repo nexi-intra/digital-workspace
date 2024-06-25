@@ -1,0 +1,76 @@
+# GitHub Issue Template for Service Registration
+
+name: "Service Registration Template"
+about: "Use this template for registering a new service or updating an existing service"
+title: "Service Registration: [Service Name]"
+labels: [service-registration, needs-review]
+assignees: 'username1, username2'
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Service Registration Overview
+        Provide a brief overview of the service being registered or updated.
+
+  - type: input
+    id: service_name
+    attributes:
+      label: 'Service Name'
+      description: 'What is the name of the service?'
+      placeholder: 'e.g., Payment Processing Service'
+    validations:
+      required: true
+
+  - type: textarea
+    id: service_description
+    attributes:
+      label: 'Service Description'
+      description: 'Describe the purpose of the service and any specific functionality.'
+      placeholder: 'Detail the service functionalities and purpose here.'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 'Environment'
+      description: 'Select the environment where the service will be deployed.'
+      options:
+        - Development
+        - Testing
+        - Staging
+        - Production
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 'Dependencies'
+      description: 'List any dependencies the service has on other services or systems.'
+      placeholder: 'Specify all dependencies, e.g., databases, external APIs, etc.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_outcome
+    attributes:
+      label: 'Expected Outcome'
+      description: 'What is the expected outcome of this service registration?'
+      placeholder: 'Describe what successful integration and deployment would look like.'
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: compliance_check
+    attributes:
+      label: 'Compliance and Security'
+      description: 'Confirm that all compliance and security standards are met.'
+      options:
+        - label: 'All security standards checked'
+        - label: 'Compliance requirements met'
+    validations:
+      required: true
+
+footer: 'Please review all details before submitting.'
